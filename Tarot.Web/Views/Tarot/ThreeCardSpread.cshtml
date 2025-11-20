@@ -1,0 +1,76 @@
+﻿@model IEnumerable<Tarot.Data.TarotCard>
+
+@{
+    ViewData["Title"] = "Tre kort: Dåtid, Nutid, Framtid";
+}
+
+<h1 class="text-center">@ViewData["Title"]</h1>
+<h6 class="text-center">Ställ din fråga (ska inte kunna besvaras genom "ja" eller "nej"). Läs tolkningarna under korten.</h6>
+
+<hr />
+
+<div class="row">
+
+    <div class="col-md-4">
+        <div class="card h-100">
+            <div class="card-header text-center"><strong>Dåtid</strong></div>
+
+            @{
+                var card1 = Model.ElementAt(0);
+            }
+
+            <img src="~/images/@(card1.Name).jpg" class="card-img-top" alt="@card1.Name" style="width: 100%; height: auto;"> <div class="card-body">
+                <h5 class="card-title text-center">@card1.Name</h5> @foreach (var meaning in card1.Meanings) {
+                <p class="card-text small">
+                    <strong>@meaning.MeaningCategory.CategoryName:</strong>
+                    @meaning.Text
+                </p>
+                                }
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card h-100">
+            <div class="card-header text-center"><strong>Nutid</strong></div>
+
+            @{
+                var card2 = Model.ElementAt(1);
+            }
+
+            <img src="~/images/@(card2.Name).jpg" class="card-img-top" alt="@card2.Name" style="width: 100%; height: auto;"><div class="card-body">
+                <h5 class="card-title text-center">@card2.Name</h5> @foreach (var meaning in card2.Meanings) {
+                <p class="card-text small">
+                    <strong>@meaning.MeaningCategory.CategoryName:</strong>
+                    @meaning.Text
+                </p>
+                                }
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card h-100">
+            <div class="card-header text-center"><strong>Framtid</strong></div>
+
+            @{
+                var card3 = Model.ElementAt(2);
+            }
+
+            <img src="~/images/@(card3.Name).jpg" class="card-img-top" alt="@card3.Name" style="width: 100%; height: auto;"> <div class="card-body">
+                <h5 class="card-title text-center">@card3.Name</h5> @foreach (var meaning in card3.Meanings) {
+                <p class="card-text small">
+                    <strong>@meaning.MeaningCategory.CategoryName:</strong>
+                    @meaning.Text
+                </p>
+                                }
+            </div>
+        </div>
+    </div>
+
+</div>
+<hr />
+
+<div class="text-center">
+    <a href="/tarot/threecardspread" class="btn-grad" style="display: inline-block; width: auto;">Dra en ny läggning</a>
+</div>

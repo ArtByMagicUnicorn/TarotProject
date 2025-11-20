@@ -1,0 +1,33 @@
+﻿@model IEnumerable<Tarot.Data.TarotCard>
+
+@{
+    ViewData["Title"] = "Hela Kortleken";
+}
+
+<div class="text-center mb-5">
+    <h1 class="display-4">Hela Kortleken</h1>
+    <p class="lead">Utforska alla 78 korten i Rider-Waite leken.</p>
+</div>
+
+<div class="row row-cols-2 row-cols-md-4 row-cols-lg-5 g-4">
+
+    @foreach (var card in Model)
+    {
+        <div class="col">
+            <div class="card h-100 shadow-sm bg-dark text-white border-secondary">
+
+                <img src="~/images/@(card.Name).jpg"
+                     class="card-img-top"
+                     alt="@card.Name"
+                     style="object-fit: cover; aspect-ratio: 2/3;">
+
+                <div class="card-body p-2 text-center">
+                    <h6 class="card-title mb-0">@card.Name</h6>
+                    <small class="text-muted">@card.Suit</small>
+                </div>
+
+            </div>
+        </div>
+    }
+
+</div>

@@ -1,0 +1,145 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    /* --- Vår nya bakgrund --- */
+    /* En subtil, mörk gradient från mörkblå till nästan svart */
+    background: linear-gradient(to bottom, #1a233a, #0c0d14);
+    /* Se till att gradienten ALLTID täcker hela skärmhöjden */
+    min-height: 100vh;
+    /* Ändra ALL text som inte är i en "card" till ljusgrå/vit */
+    color: #f1f1f1;
+}
+
+h1 {
+    font-family: "Bonheur Royale", cursive;
+}
+
+h6 {
+    font-family: "Doto", sans-serif;
+}
+
+.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
+  color: var(--bs-secondary-color);
+  text-align: end;
+}
+
+.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
+  text-align: start;
+}
+
+/*
+  =================================
+  Våra egna stilar för Tarot-appen
+  =================================
+*/
+
+.tarot-card-display {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+    /* Vi kan också styla taggar INUTI den klassen */
+    .tarot-card-display p {
+        margin-top: 20px;
+    }
+
+/*
+  =================================
+  Vår nya snygga gradient-knapp
+  =================================
+*/
+
+.btn-grad {
+    /* Vi slår ihop båda dina definitioner till en */
+    background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA 51%, #77A1D3 100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    border: none; /* Viktigt för knappar som inte ska ha en ful kant */
+}
+
+    .btn-grad:hover {
+        background-position: right center; /* Ändrar gradientens position */
+        color: #fff;
+        text-decoration: none;
+    }
+
+/*
+  =================================
+  Tarot-bilder i galleriet
+  =================================
+*/
+
+/* En mjuk animation för korten i galleriet */
+.card {
+    transition: transform 0.2s ease-in-out;
+}
+
+    /* När man hovrar över ett kort... */
+    .card:hover {
+        transform: translateY(-5px); /* ...flytta det 5 pixlar uppåt */
+        box-shadow: 0 10px 20px rgba(0,0,0,0.3) !important; /* ...och ge det mer skugga */
+    }
+
+
+/*
+  =================================
+  Platshållare för tarot-bilder
+  =================================
+*/
+
+.img-placeholder {
+    width: 100%;
+    height: 100%; /* Tar upp hela höjden av sin kolumn */
+    min-height: 250px; /* Så den har en höjd även på mobilen */
+    /* Centrera texten inuti */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Utseende */
+    background-color: #f8f8f8;
+    border: 2px dashed #dddddd;
+    color: #aaaaaa;
+    text-align: center;
+    font-style: italic;
+    /* Snyggar till hörnen för att matcha kortet */
+    border-top-left-radius: var(--bs-card-inner-border-radius);
+    border-bottom-left-radius: var(--bs-card-inner-border-radius);
+}
+
+/* När skärmen är liten (mobil) och kolumnerna staplas... */
+@media (max-width: 767.98px) {
+    .img-placeholder {
+        /* ...ta bort de vänstra hörnen och runda de övre högra istället. */
+        border-bottom-left-radius: 0;
+        border-top-right-radius: var(--bs-card-inner-border-radius);
+    }
+}
+   

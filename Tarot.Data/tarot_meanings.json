@@ -1,0 +1,392 @@
+[
+    {
+        "cardName": "The Fool",
+        "upright": "En ny början – andlig resa, ny karriär eller nytt livskapitel. Följ ditt hjärta även utan garanti om slutresultatet.",
+        "reversed": "Impulsivitet och bristande omdöme. Se över dina beslut och agera inte förhastat."
+    },
+    {
+        "cardName": "The Magician",
+        "upright": "En tid av stora möjligheter. Ta initiativ, sätt nya mål och använd din personliga kraft för att manifestera önskningar.",
+        "reversed": "Varning för illusioner, osäkerhet eller manipulation – allt är inte som det verkar."
+    },
+    {
+        "cardName": "The High Priestess",
+        "upright": "Inre reflektion eller meditation. Du bör lyssna på din inre visdom och ansluta till ditt högre jag.",
+        "reversed": "Varning för potentiella fallgropar! Dessa uppstår på grund av att du ignorerar din inre visdom eller intuition. Du är ur balans eller inte är i harmoni med ditt verkliga jag."
+    },
+    {
+        "cardName": "The Empress",
+        "upright": "En tid av överflöd, fruktbarhet och lycka. Ett flöde av positiv energi och möjligheter som uppenbarar sig.",
+        "reversed": "Ett tillstånd av obalans eller ofruktbarhet och bristande självomsorg. Detta kan vara en tid av stagnation där din kreativa energi är blockerad. Eller så är det en tid där du känner dig isolerad eller oönskad."
+    },
+    {
+        "cardName": "The Emperor",
+        "upright": "Det är dags att ta tag i en situation. Du kan behöva ta kommando, sätta gränser eller etablera en tydlig struktur.",
+        "reversed": "En känsla av förlorad kontroll eller auktoritet. Pekar på överdriven styrning eller maktmissbruk. En ovilja att ta ansvar. En tendens att undvika ledarskap."
+    },
+    {
+        "cardName": "The Hierophant",
+        "upright": "Du söker efter andlig mening och förståelse. Detta kan vara en tid där du känner ett behov av att djupdyka i din andlighet. Du kan vilja söka svar på livets stora frågor eller utforska gamla traditioner och ritualer. Verklig visdom ofta kommer genom stillhet och reflektion. ",
+        "reversed": "Du kan vilja frigöra dig från traditionella tankesätt eller ifrågasätta gamla trosuppfattningar. Det kan vara en tid av andlig kris, där dina tidigare metoder eller din tro inte längre tjänar dig. "
+    },
+    {
+        "cardName": "The Lovers",
+        "upright": "En tid av själslig förening. Kärlek och val spelar en central roll. Hitta balansen mellan hjärta och förnuft. Du står inför ett viktigt val. Valet ifråga kan ha en långvarig inverkan på din väg i livet.",
+        "reversed": "En tid av osäkerhet eller tvivel. Detta gäller särskilt när det kommer till relationer eller stora livsbeslut. En känsla av att vara splittrad. Kanske är du osäker på vilken väg du ska ta framåt?"
+    },
+    {
+        "cardName": "The Chariot",
+        "upright": "En tid av kontroll och framgång. Genom beslutsamhet och viljestyrka har du förmågan att övervinna alla hinder längs din väg. En tid av framåtrörelse. Du driver på med självförtroende och beslutsamhet.",
+        "reversed": "En känsla av förlorad kontroll eller drivkraft. Hinder, utmaningar eller förseningar som hindrar framsteg. Detta är en tid att omvärdera och tänka om. Du bör söka efter de inre orsakerna till yttre motgångar."
+    },
+    {
+        "cardName": "Strength",
+        "upright": "Du har ett mod, en beslutsamhet och en inre styrka. Därmed kan du övervinna de eventuella utmaningar som du står inför. En tid av egenmakt och självrespekt. Du känner en djup koppling till dina inre värderingar och hanterar livets svårigheter med grace.",
+        "reversed": "Inre konflikter, självtvivel eller känslor av svaghet och sårbarhet. En tid då du känner dig överväldigad av yttre utmaningar eller inre rädslor. Du kämpar då för att hitta ditt inre mod och din beslutsamhet."
+    },
+    {
+        "cardName": "The Hermit",
+        "upright": "Introspektion. Behov av att dra sig tillbaka från världens brus. Detta för att meditera och reflektera över livet. Uppmaning till självrannsakan och eftertanke. Du bör lyssna mer på din inre röst och visdom.",
+        "reversed": "Varning för överdriven isolering! Kanske har du gått vilse? Bryt ensamheten och sök kontakt eller råd."
+    },
+    {
+        "cardName": "Wheel of Fortune",
+        "upright": "En tid av positiva förändringar och händelser. Livet är fullt av rörelse och turen är nu på din sida. Ta tillvara på de ögonblick när allt tycks falla på plats. Du bör ha modet att anpassa dig till förändringarna för att maximera deras positiva effekter.",
+        "reversed": "En tid av motgångar. Du känner att livets händelser ligger utom din kontroll. Det uppmanar till självreflektion kring hur du själv har bidragit till din situation. Rannsaka dina egna handlingar och attityder samt vad du kan göra för att återfå kontrollen."
+    },
+    {
+        "cardName": "Justice",
+        "upright": "En tid där rättvisa kommer att ske. En tid där beslut och handlingar vägs på rättvisans våg. Ta ansvar för dina handlingar. Du bör se saker och ting ur ett bredare perspektiv och förstå att alla beslut får konsekvenser. Behandla andra på ett rättvist sätt.",
+        "reversed": "Komplikationer. Dessa uppstår på grund av brist på balans och rättvisa i ditt liv. Du känner dig orättvist behandlad. Alternativt kan du stå inför en situation där rättvisa inte har uppnåtts. Varning! Kanske du själv agerar orättvist mot andra?"
+    },
+    {
+        "cardName": "The Hanged Man",
+        "upright": "En vilja och ett behov av ett nytt perspektiv. Du vill eller bör se på världen med andra ögon. Detta kan innebära självuppoffring och att sätta andra i första rummet. Att göra detta kan leda till viktiga insikter och personlig utveckling. Du bör ägna tid åt meditativ eftertanke och finna ett lugn i att inte agera.",
+        "reversed": "En känsla av att ha kört fast. Du kanske gör motstånd mot en nödvändig förändring vilket leder till en personlig kris. Saker du klamrar dig fast vid tjänar inte dina högre syften."
+    },
+    {
+        "cardName": "Death",
+        "upright": "En viktig fas i ditt liv håller på att nå sitt slut. Slutet banar dock väg för en ny början. Ett tecken på att det är dags för en personlig förvandling. Släpp taget om det gamla och välkomna nya erfarenheter och lärdomar.",
+        "reversed": "En motvilja eller oförmåga att gå vidare från nuvarande omständigheter. Detta leder till stagnation och indikerar en rädsla för förändring. Svårigheter att släppa taget om det som är bekant, även om det inte längre gagnar dig."
+    },
+    {
+        "cardName": "Temperance",
+        "upright": "Vikten av att finna balans. Du bör hitta ett levnadssätt där du inte går till ytterligheter. Tålamod, självkontroll och förmågan att interagera motstridiga element på ett harmoniskt sätt förespråkas.",
+        "reversed": "En brist på balans. Varning för splittring eller överdrift i ditt liv. Det är dags att omvärdera var du lägger din energi. Du bör även passa på att se över dina prioriteringar."
+    },
+    {
+        "cardName": "The Devil",
+        "upright": "En tid av personliga utmaningar. Du kämpar med dina inre demoner eller beroenden. En känsla av att vara fast i en situation. Du kan behöva konfrontera och förstå de delar av ditt liv som håller dig tillbaka.",
+        "reversed": "En process av frigörelse och befrielse. Du övervinner begränsningar och bryter dig loss från negativa mönster. Eller så finner du styrkan att stå emot frestelser. Detta är en tid för andlig och emotionell återhämtning."
+    },
+    {
+        "cardName": "The Tower",
+        "upright": "Dramatiska och ofta oväntade förändringar. Gamla strukturer och övertygelser är på väg att rivas ner. Detta sker ofta på ett dramatiskt och oväntat sätt. En tid av djupgående förändringar. Dessa kan vara smärtsamma men erbjuder möjligheter till personlig utveckling och övergång till något nytt.",
+        "reversed": "En inre kamp. En ovilja att acceptera och hantera nödvändiga förändringar. Du kämpar med dina rädslor eller osäkerheter. Dessa förhindrar dig från att gå vidare."
+    },
+    {
+        "cardName": "The Star",
+        "upright": "Förnyelse och hopp. En svår tid är över och en ny, mer positiv fas är på väg. Klarhet i tanke och känsla samt en stark förbindelse till din inre intuition.",
+        "reversed": "En tid av osäkerhet och frustration. Detta är en tid då du kan känna dig vilse och utan riktning. Det kan vara svårt att se ljuset i slutet av tunneln."
+    },
+    {
+        "cardName": "The Moon",
+        "upright": " En tid för introspektion och reflektion. Detta är en tid då ditt undermedvetna blir mer framträdande. Drömmar eller intuition kan nu erbjuda viktiga insikter. En tid av osäkerhet, men även av stor personlig utveckling. Sanningar som tidigare har varit dolda uppenbaras nu.",
+        "reversed": "En tid av förvirring och osäkerhet. Det kan finnas en känsla av att inte se saker och ting på ett klart sätt. Därmed skapas missförstånd och felbedömningar görs. Denna tid kräver tålamod och försiktighet. Det kan vara lätt att vilseledas av illusioner och självbedrägeri."
+    },
+    {
+        "cardName": "The Sun",
+        "upright": "Framgång, klarhet och lycka. En tid av positivitet där saker faller på plats. Livet känns ljusare och mer hoppfullt.",
+        "reversed": "Tillfälliga motgångar eller en tid av osäkerhet. En brist på klarhet eller en känsla av förlorad riktning."
+    },
+    {
+        "cardName": "Judgement",
+        "upright": "En tid av uppvaknande och insikt. En fas där du får en högre medvetenhet om dig själv och din omgivning. Det är en tid för självrannsakan och försoning med det förflutna. Du tar ett steg mot en mer äkta och tillfredsställande existens.",
+        "reversed": "En tid av stagnation. Obeslutsamhet och en rädsla för förändring. Detta kan vara en tid då du kämpar med att ta viktiga beslut. Du kan också tvingas hantera konsekvenserna av dina handlingar."
+    },
+    {
+        "cardName": "The World",
+        "upright": "En tid där viktiga livscykler når sin kulmen. En tid för firande och erkännande av de prestationer som uppnåtts. Ökad förståelse för världen och en känsla av att vara i harmoni med universum.",
+        "reversed": "Du känner dig fast. Viktiga livscykler har inte nått sin fulla potential. Detta kan vara en tid av frustration över ofullständiga mål. Det kan också betyda att du upplever hinder i dina strävanden. Det kan därför vara svårt att se tydliga framsteg."
+    },
+    {
+        "cardName": "Ace of Wands",
+        "upright": "En ny början eller en gnista av inspiration som kan leda till stora framsteg. Ett tecken på att det är dags att agera på dina drömmar och idéer med nyfunnen energi och entusiasm.",
+        "reversed": "Hinder och förseningar längs vägen. Inspirationen finns där, men något blockerar den från att uttryckas eller realiseras."
+    },
+    {
+        "cardName": "2 of Wands",
+        "upright": "Du står inför viktiga val och beslut. Dessa kommer att ha långsiktiga effekter på din framtid. En tid av planering och förberedelse, där du väger dina alternativ mot varandra och överväger olika vägar framåt. Det uppmanar dig att ta kontrollen över din egen framtid och våga drömma stort. Dessutom uppmanas du att börja sträva mot dina mål och ambitioner.",
+        "reversed": "Du känner dig fast eller osäker på vilken väg du ska ta. En tid då planer stannar av och du känner dig oförmögen att agera på dina ambitioner. En uppmaning till självreflektion och att söka efter orsakerna till din tveksamhet eller rädsla för att ta steget ut i det okända."
+    },
+    {
+        "cardName": "3 of Wands",
+        "upright": "En tid för expansion och framsteg. Ett tecken på att dina planer och projekt börjar bära frukt. Du är redo att ta nästa steg och du uppmanas att blicka framåt med hopp och optimism samt att vara redo för de nya äventyr och möjligheter som ligger framför dig. Det är läge att tänka stort och utanför boxen. Du bör också förvänta dig att dina ansträngningar kommer att leda till meningsfulla och långvariga resultat.",
+        "reversed": "Hinder och förseningar. Det är dags att reflektera över dina planer och mål. Du bör identifiera orsaken till att framstegen kan ha avstannat och vad som kan göras för att övervinna dessa utmaningar."
+    },
+    {
+        "cardName": "4 of Wands",
+        "upright": "En tid av firande, glädje och tacksamhet. Du har uppnått en viss nivå av stabilitet och trygghet. Ofta är stabiliteten ett resultat av hårt arbete och strävsamhet. Det är nu dags att samla familj och vänner för att dela med dig av framgångarna och skapa minnesvärda ögonblick tillsammans.",
+        "reversed": "De firanden och framgångar som annars skulle ha varit aktuella låter vänta på sig. En känsla av instabilitet eller osäkerhet i livet. De glädjeämnen som du hade hoppats på har inte realiserats som du har förväntat dig."
+    },
+    {
+        "cardName": "5 of Wands",
+        "upright": "En tid av konflikt och konkurrens i ditt liv. Det kan handla om interna strider som du utkämpar inom dig själv. Men det kan även röra sig om yttre konflikter som involverar andra personer. Stå fast vid dina åsikter och kämpa för det du tror på. Samtidigt bör du även vara medveten om att du inte behöver gå segrande ur alla konflikter. Ibland kan lärdomen ligga i själva utmaningen snarare än i en seger.",
+        "reversed": "En övergång till konfliktlösning och harmoni. Du börjar hitta sätt att lösa tidigare konflikter eller aktivt undviker att strida i onödan. Du undviker att ta itu med viktiga frågor som behöver hanteras."
+    },
+    {
+        "cardName": "6 of Wands",
+        "upright": "Framgång och uppnåelsen av ett mål. En tid där hårt arbete lönar sig och du får uppskattning och erkännande från andra. Ledarskap och förmågan att stå stolt i framgång.",
+        "reversed": "Egoism, brist på erkännande eller att du känner dig otillräcklig. Du fokuserar för mycket på dina egna behov eller har svårt att erkänna dina brister."
+    },
+    {
+        "cardName": "7 of Wands",
+        "upright": "Du uppmanas att tro på dig själv samt att lita på din förmåga att övervinna hinder och svårigheter. En påminnelse om att det inte är läge att ge upp. Istället bör du snarare anstränga dig mer och kämpa ännu hårdare.",
+        "reversed": "Känslan av att vara överväldigad eller utmanad men oförmögen att stå upp för dig själv. Ett bristande självförtroende eller att du undviker konfrontation. Alternativt att du tenderar att känna dig nedstämd trots dina framgångar."
+    },
+    {
+        "cardName": "8 of Wands",
+        "upright": "Snabba händelser eller förändringar som närmar sig. Var redo att agera när tillfället dyker upp, då tiden kan vara knapp. Nyheter eller information som du har väntat på snart kommer att tillkännages.",
+        "reversed": "Fördröjningar och frustrationer. Det kan oväntat sättas käppar i hjulet för dina planer och förväntningar. Därför behöver du ha tålamod och kanske omvärdera din nuvarande strategi."
+    },
+    {
+        "cardName": "9 of Wands",
+        "upright": "En tid av motståndskraft och beslutsamhet. Segern är inom räckhåll, trots utmaningarna. Du behöver bara fortsätta att stå fast vid dina övertygelser och skydda det du har kämpat för. Ge inte upp, även om du inte riktigt ser slutet än.",
+        "reversed": "Tidigare kamper och vaksamhet leder till utmattning. Reflektera över ditt nuvarande förhållningssätt till livets utmaningar. Kanske behöver du inte ha en onödigt hög beredskap utan istället hitta nya, mer hållbara sätt att hantera problem. Tänk på att du ibland kan behöva släppa taget om ditt konstanta försvarsläge för att kunna gå vidare."
+    },
+    {
+        "cardName": "10 of Wands",
+        "upright": "En tid i livet då du känner dig överväldigad av ansvar och förpliktelser. En tid då bördorna du bär på tynger dig både fysiskt och mentalt. Insikt om att hårt arbete och uthållighet är beundransvärda egenskaper. Risk att bli utbränd. Omvärdera dina prioriteringar och kanske sök hjälp eller avlastning.",
+        "reversed": "Början på en tid av lättnad närmar sig. Just nu har du kanske alltför mycket att göra och känner dig stressad. Men du släpper taget om onödigt ansvar och stressorer som inte längre tjänar ditt högsta jag väl. Du har börjat erkänna dina begränsningar för dig själv och söker hjälp. Detta kan leda till en mer balanserad och hanterbar livssituation."
+    },
+    {
+        "cardName": "Page of Wands",
+        "upright": "En gnista av inspiration eller en inbjudan till nya äventyr. Det är dags att skrida till verket och agera på nya idéer, passioner eller projekt. Ta risker och utforska okända områden. Du uppmanas också att välkomna nya erfarenheter med öppenhet och entusiasm.",
+        "reversed": "En brist på riktning samt impulsivitet. Fördröjningar eller försummade möjligheter kan bli resultatet om du agerar utan eftertanke. Du uppmanas att reflektera över dina beslut och hitta en mer genomtänkt väg framåt."
+    },
+    {
+        "cardName": "Knight of Wands",
+        "upright": "Äventyr, energi och en stark drivkraft. Början på en resa eller ett projekt som är fyllt av passion och entusiasm. Var modig, tro på dig själv och fånga dagen samt följ dina drömmar med full kraft.",
+        "reversed": "En tid av förseningar, hinder eller stagnation. Varning för impulsiva beslut eller att du agerar utan tillräcklig planering och eftertanke. Du uppmanas att omvärdera vart du är på väg och agera mer tålmodigt och eftertänksamt."
+    },
+    {
+        "cardName": "Queen of Wands",
+        "upright": "Självständighet, passion och mod. Energi och livskraft. Hon inspirerar andra genom sin starka vilja och kreativitet samt sina ledaregenskaper. Ta initiativ, vara självsäker och agera med integritet.",
+        "reversed": "En tid av osäkerhet och brist på självförtroende. Du känner dig överväldigad av dina omständigheter. Alternativt kan det betyda att du förlorat din inre glöd och passion. Reflektera över vad som verkligen driver dig och att hitta din inre styrka igen."
+    },
+    {
+        "cardName": "King of Wands",
+        "upright": "En stark, karismatisk ledare som är full av energi och passion. Ta initiativ, visa mod och agera med integritet. Du bör våga tro på din vision och din förmåga att inspirera andra.",
+        "reversed": "Brist på riktning eller ledarskap. Arrogans, tyranni eller att du är alltför ambitiös utan att ta hänsyn till andra."
+    },
+    {
+        "cardName": "Ace of Cups",
+        "upright": "Öppna ditt hjärta för nya erfarenheter. En tid av känslomässig klarhet och möjlighet att verkligen lyssna till och lita på din intuition. En tid för inre harmoni där du kan finna glädje i de små sakerna i livet.",
+        "reversed": "En tid av obesvarade känslor eller emotionell osäkerhet. En tid där potentialen för känslomässig utveckling finns men inte realiseras."
+    },
+    {
+        "cardName": "2 of Cups",
+        "upright": "Harmoniska relationer, känslomässig balans och positiv interaktion.",
+        "reversed": "Konflikter i relationer, brist på harmoni och emotionell distans. Du bör undersöka orsakerna till konflikter och sträva efter förståelse."
+    },
+    {
+        "cardName": "3 of Cups",
+        "upright": "En tid av glädje och firande. Detta kan vara en tid då prestationer och framgångar firas, inte bara enskilt utan tillsammans med andra. En tid av harmoni och glädje som delas med vänner eller familj.",
+        "reversed": "Sociala konflikter, missförstånd eller känslor av isolering. En tid där du känner dig utanför eller där dina relationer genomgår svårigheter."
+    },
+    {
+        "cardName": "4 of Cups",
+        "upright": "En tid av självreflektion och inåtvändhet. En signal om att du känner en viss apati eller ett missnöje med livets erbjudanden. Omvärdera dina livsvägar. Det är dags att tänka om och överväga nya perspektiv.",
+        "reversed": "En tid av ny medvetenhet och en ny inställning till livet. Detta kan vara en tid där du öppnar upp dig för nya möjligheter och erfarenheter. Du kan också börja uppskatta det som du tidigare ignorerade. Skifta perspektiv och välkomna nya vägar och äventyr."
+    },
+    {
+        "cardName": "5 of Cups",
+        "upright": "Sorg och förlust. Fokusera inte enbart på det som har gått förlorat, utan se även det som fortfarande finns kvar. Vissa aspekter av livet kan vara svårt, men att det alltid finns något att vara tacksam för. Vikten av att bearbeta och acceptera sina känslor för att kunna gå vidare.",
+        "reversed": "En övergång från sorg till återhämtning. En viktig fas av inre utveckling där du börjar acceptera det förflutna. Detta gör att du kan blicka mot framtiden med förnyat hopp och optimism. Varje förlust för även med sig möjligheten till en ny början och att det är viktigt att inte fastna i det förflutna."
+    },
+    {
+        "cardName": "6 of Cups",
+        "upright": "En tid av reflektion och sentimentalitet. En tid då gamla minnen och erfarenheter från det förflutna kommer tillbaka och erbjuder värdefulla insikter. Eller så ger de gamla minnena bara en känsla av tröst och tillhörighet.",
+        "reversed": "En svårighet att gå vidare från det förflutna. Det resulterar i att du försummar möjligheter och erfarenheter i nuet."
+    },
+    {
+        "cardName": "7 of Cups",
+        "upright": "En tid av fantasier och drömmar, där många val och möjligheter finns tillgängliga. Detta är en tid då fantasierna kan ta överhand och skapa en dimma av illusioner och förvirring. Försiktighet – tänk på att inte alla alternativ är realistiska eller genomförbara.",
+        "reversed": "En tid då du börjar se igenom illusioner och fantasier. Detta är en tid av mental klarhet där du inser vad som är verkligt och genomförbart. Fatta beslut som baseras på verklighet snarare än önsketänkande."
+    },
+    {
+        "cardName": "8 of Cups",
+        "upright": "Introspektion och upptäckt. En tid då du utforskar okända områden i livet och i det inre jaget. Detta kan innebära att du överger gamla vanor, relationer eller till och med en karriär som inte längre uppfyller dina behov och önskningar.",
+        "reversed": "En ovilja eller rädsla för att gå vidare. Det kan handla om svårigheter att bryta med det förflutna eller en ovilja att utforska nya vägare."
+    },
+    {
+        "cardName": "9 of Cups",
+        "upright": "En tid av uppfyllelse och tillfredsställelse. Du är på rätt väg för att nå dina mål och önskningar. En tid av glädje, välstånd och emotionell stabilitet är inom räckhåll.",
+        "reversed": "En känsla av missnöje eller brist på tillfredsställelse. Du känner dig inte helt nöjd med ditt nuvarande tillstånd, trots eventuella yttre framgångar."
+    },
+    {
+        "cardName": "10 of Cups",
+        "upright": "Du befinner dig i en fas av stor emotionell tillfredsställelse och harmoni. En tidpunkt då du har uppnått en betydande emotionell fulländning och lycka, ofta kopplad till familjen och livet där hemma. En påminnelse om vikten av att uppskatta och vårda de relationer som ger oss glädje och trygghet.",
+        "reversed": "En tid av emotionell obalans eller missnöje. Du känner dig inte tillfredsställd på ett djupare plan, trots yttre framgångar eller stabilitet. Manar till reflektion över vad som verkligen ger dig mening och lycka i livet. Omvärdera din nuvarande situation eller dina relationer."
+    },
+    {
+        "cardName": "Page of Cups",
+        "upright": "En tid av emotionellt utforskande och kreativ utveckling. Början på en resa där du upptäcker nya sidor av ditt känsloliv och din kreativa förmåga.",
+        "reversed": "Känslomässiga blockeringar eller en ovilja att konfrontera emotionella frågor. En brist på kreativitet eller inspiration."
+    },
+    {
+        "cardName": "Knight of Cups",
+        "upright": "En djupt känslomässig, drömlik visionär. Denna person är ofta en budbärare som för med sig budskap om känslor och ideal. Riddaren symboliserar en person som är villig att följa sitt hjärta och sina drömmar. Denna person är benägen att lockas till nya äventyr och drivs av sin emotionella intuition och idealism.",
+        "reversed": "En tid av emotionell instabilitet eller drömmar som förleder dig. Utmaningar kopplade till emotionell mognad och ärlighet. Dina känslor kanske tar överhanden och får dig att fatta osäkra beslut. En tid då du låter dig uppslukas av orealistiska fantasier, vilka leder till besvikelser. Varning för personer som använder sin charm för att bedra eller manipulera andra."
+    },
+    {
+        "cardName": "Queen of Cups",
+        "upright": "Budskap om emotionell intelligens och mognad. En person som har en djup förståelse för sina egna och andras känslor. En person som hanterar sina känslor på ett moget sätt, och som kan erbjuda stöd och förståelse till personer i sin omgivning.",
+        "reversed": "Emotionella utmaningar eller en tid av instabilitet. Detta kan yttra sig som svårigheter i att hantera och uttrycka känslor på ett hälsosamt sätt. Du är ur balans. Kanske är du alltför emotionellt involverad i situationer eller så håller du tvärtom tillbaka dina känslor för mycket."
+    },
+    {
+        "cardName": "King of Cups",
+        "upright": "En person som är i full kontroll över sina känslor. Personen är ofta en stabil och pålitlig kraft i andra människors liv. En mogen, känslomässig intelligens och förmågan att hantera ett komplext känsloliv med lätthet och visdom. En person som är en skicklig kommunikatör, ofta förmögen att uttrycka sina känslor på ett tydligt och konstruktivt sätt.",
+        "reversed": "En tid av emotionell instabilitet eller en person som har svårt att hantera sina känslor på ett hälsosamt sätt. En person som är manipulativ, ovillig att erkänna sina egna känslomässiga brister, eller som använder sina känslor för att styra andra. Varning för en tendens att fly undan känslomässiga utmaningar snarare än att möta dem."
+    },
+    {
+        "cardName": "Ace of Swords",
+        "upright": "En tid av klarhet och insikt. Detta är en tid då du kommer att ha den mentala skärpan att se saker för vad de är. Du har även den intellektuella styrkan att kunna lösa komplexa problem.",
+        "reversed": "Förvirring, osäkerhet och eventuellt lögner eller bedrägligt beteende. Varning för att allt inte är som det verkar, eller att du bör tänka igenom saken mer noggrant."
+    },
+    {
+        "cardName": "2 of Swords",
+        "upright": "En tid av osäkerhet och beslutsångest. En inre eller yttre konflikt där det finns ett behov av eftertanke och balans innan man går vidare.",
+        "reversed": "Ett uppvaknande eller ett förändrat perspektiv. Du är redo att ta av dig ögonbindeln och se situationen för vad den är."
+    },
+    {
+        "cardName": "3 of Swords",
+        "upright": "En tid av sorg, förlust och emotionell smärta. En tid då svåra men nödvändiga insikter kommer till ytan. Dock bör du komma ihåg att det finns potential för läkning och insikt genom dessa erfarenheter.",
+        "reversed": "Ett lättande av de emotionella och psykiska bördor. En tid av försoning, återhämtning och till och med läkning av gamla sår."
+    },
+    {
+        "cardName": "4 of Swords",
+        "upright": "En tid av andlig och mental återhämtning. Detta är en tid då du kan dra dig tillbaka från livets brus och fokusera på ditt inre lugn. En signal om att du bör ge dig själv utrymme och tid att andas och reflektera.",
+        "reversed": "En tid av oro, ångest eller mentalt obehag. Det kan vara en tid då du känner dig rastlös och har svårt att finna ett inre lugn."
+    },
+    {
+        "cardName": "5 of Swords",
+        "upright": "En situation präglad av konflikt och strid. En obalans i makt och en strävan efter dominans. Maktobalansen kommer ofta på bekostnad av andra involverade parter. Varje seger har sitt pris. Det kan vara värt att reflektera över situationens moraliska och etiska aspekter.",
+        "reversed": "En vändpunkt. Det kan vara läge för introspektion och försoning. Du kan få möjlighet att rätta till tidigare misstag eller olämpliga handlingar. Detta kan också vara en bra tid att acceptera ett nederlag och gå vidare."
+    },
+    {
+        "cardName": "6 of Swords",
+        "upright": "Du är på väg mot en bättre situation. Övergång och förändring. Du har fattat ett beslut som kommer att föra dig bort från en problematisk situation. Du bär med dig ett visst bagage. Det kan till exempel röra sig om lärdomar, erfarenheter eller problem.",
+        "reversed": "En oförmåga att fly. Du är oförmögen att göra en nödvändig förändring i ditt liv. Varning för att försöka undvika problem eller utmaningar. En tid av förnekelse. Du kanske inte vill eller kan se verkligheten som den är."
+    },
+    {
+        "cardName": "7 of Swords",
+        "upright": "Användning av list, diplomati och strategi. Tänk kreativt och använd oortodoxa metoder för att övervinna hinder. Du undviker en direkt konfrontation. Istället väljer du att ta en mer diplomatisk eller indirekt väg mot ditt mål.",
+        "reversed": "Konsekvenser av tidigare handlingar och beteenden. En tid där du kan behöva konfrontera och hantera resultaten av ditt tidigare agerande. Du får nu stå till svars för dina tidigare listiga eller oärliga taktiker. Detta kan vara en tid för ånger, insikt och att ställas inför avslöjanden som inte längre kan undvikas."
+    },
+    {
+        "cardName": "8 of Swords",
+        "upright": "En tid av maktlöshet och begränsning. En situation där du känner dig fångad. Kanske fängslas du av dina egna tankar, föreställningar eller omständigheter. Detta är en tid då du kan känna dig fast, utan synliga utvägar. Dessa begränsningar är dock ofta självskapade. Det innebär att lösningen ligger inom din egen förmåga att förändra ditt perspektiv.",
+        "reversed": "Frigörelse och uppbrott från tidigare begränsningar. Du börjar se klart på de hinder som tidigare uppfattades som oöverkomliga. Du finner också vägar att övervinna hindren. En övergång från maktlöshet till egenmakt. Detta innebär ofta att du hittar din inre styrka och modet att ta dig an nya utmaningar."
+    },
+    {
+        "cardName": "9 of Swords",
+        "upright": "En intensiv tid av ångest och psykisk smärta. En tid då du kämpar med tunga tankar och bekymmer. Denna börda kan leda till överväldigande känslor av hopplöshet eller förtvivlan.",
+        "reversed": "En tid av läkning. Tidigare smärta kan nu lätta och såren läks. En övergång från mörker till ljus och från förvirring till klarhet."
+    },
+    {
+        "cardName": "10 of Swords",
+        "upright": "Slutet på en extremt svår tid. En period av stor smärta och stort lidande som äntligen når sitt klimax. Därmed tillåts du att börja bearbeta och gå vidare. Det är dags att erkänna ett nederlag i en viss situation. Acceptera verkligheten som den är, även om det innebär att du tvingas erkänna ett smärtsamt slut. Släpp taget om det förflutna och det som inte längre tjänar dig. Det kan handla om gamla mönster, relationer eller situationer som har orsakat dig smärta.",
+        "reversed": "En tid av återhämtning och läkning efter en svår tid. Du börjar komma ut på andra sidan av en kris eller svårighet. Du får förnyad hopp och optimism. Det finns ljus i slutet av tunneln samt saker och ting kommer att förbättras."
+    },
+    {
+        "cardName": "Page of Swords",
+        "upright": "En tid av mental klarhet och nyfikenhet. Utforska nya idéer, tänk kritiskt och kommunicera tydligt. Du står inför en situation där det krävs ärlighet och direkt kommunikation.",
+        "reversed": "En tid av förvirring, missförstånd eller brist på klarhet. Detta kan vara en tid då det är svårt att veta vad som är sanningen. Kommunikationen kan också vara missledande eller ofullständig."
+    },
+    {
+        "cardName": "Knight of Swords",
+        "upright": "Snabb händelseutveckling och snabba beslut. Denna energi kan driva på viktiga förändringar och nya möjligheter. En tid av mental skärpa och klarhet. Detta är en tid för rationellt tänkande och effektiv kommunikation.",
+        "reversed": "Överilade beslut och bristande planering. Potentiella konflikter och missförstånd orsakade av bristande kommunikation."
+    },
+    {
+        "cardName": "Queen of Swords",
+        "upright": "En stark, självständig och intellektuell person. Drottningen symboliserar klarhet i tanke och kommunikation, samt förmågan att fatta beslut baserade på logik och objektivitet. Hon står för sanning och rättvisa, och ger råd och vägledning med ärlighet och klarhet.",
+        "reversed": "Problem med att se saker klart och objektivt. Varning för missuppfattningar och felaktiga antaganden. En tendens att missförstå eller feltolka information och situationer."
+    },
+    {
+        "cardName": "King of Swords",
+        "upright": "Ledarskap. En stark ledare som använder sin intellektuella skärpa för att fatta väl övervägda beslut. Denna ledare är ofta rättvis, objektiv och handlar med moralisk integritet. Förmågan att fatta svåra beslut baserade på logik och fakta, snarare än känslor. Klartänkthet och ansvarsfullt agerande. Mental klarhet och förmågan att skärskåda komplexa situationer. En person som är mästare på kommunikation och argumentation.",
+        "reversed": "En person som är alltför trångsynt i sitt tänkande. Personen kan inte anpassa sig till nya situationer eller idéer. En person som inte är i kontakt med sina känslor eller som saknar empati och förståelse för andra. En person som använder sin intellektuella skärpa och auktoritet på ett destruktivt eller manipulativt sätt."
+    },
+    {
+        "cardName": "Ace of Pentacles",
+        "upright": "En kraftfull början på nya projekt, idéer eller företag. En tid av manifestation, där tankar och planer börjar bli verklighet. Ta initiativ och arbeta aktivt för att förverkliga dina drömmar.",
+        "reversed": "En form av förlust eller brist. Den kan yttra sig som en försummad möjlighet eller en försening. En tid där planer inte går som förväntat, och det kan uppmana dig att omvärdera dina nuvarande strategier."
+    },
+    {
+        "cardName": "2 of Pentacles",
+        "upright": "En tid av balans och harmoni. En fas där du framgångsrik balanserar olika delar i livet. Genom att göra detta uppnår du en känsla av stabilitet och ordning.",
+        "reversed": "Obalans och potentiella hinder i livet. En tid av osäkerhet eller oreda där saker inte går som planerat."
+    },
+    {
+        "cardName": "3 of Pentacles",
+        "upright": "Framgång genom samarbete. Gemensamma ansträngningar och ambitioner leder till framsteg och framgång. Vikten av att dela kunskaper och färdigheter med andra för att uppnå gemensamma mål.",
+        "reversed": "Hinder som beror på bristande samarbete eller lagarbete. Olika personers ambitioner eller mål krockar med varandra. Därmed skapas spänningar som förhindrar gruppen från att nå framgång."
+    },
+    {
+        "cardName": "4 of Pentacles",
+        "upright": "En tid av stabilitet och säkerhet. Detta gäller i synnerhet kopplat till materiella och ekonomiska aspekter av livet. En tid då du har lyckats skapa en trygg grund att stå på och njuter av resultatet av ditt hårda arbete. En fas av tillfredsställelse och bekvämlighet. Du har uppnått en viss nivå av ekonomisk och emotionell stabilitet. Därav kan du nu fokusera på att bevara och njuta av det du har.",
+        "reversed": "En tid av osäkerhet och instabilitet. Detta gäller i synnerhet kopplat till materiella och ekonomiska aspekter av livet. Kanske har du nu blivit osäker kring sådant som tidigare kändes väldigt säkert och tryggt. Potentiella materiella förluster. En brist på framsteg och en möjlig ovilja att ta risker, vilket kan leda till stagnation."
+    },
+    {
+        "cardName": "5 of Pentacles",
+        "upright": "En fas av livet som präglas av ekonomiska svårigheter och utmaningar. Det finns också ett behov av att kämpa för att övervinna dessa utmaningar. Detta är en tid då du behöver vara uthållig och stark nog att möta och hantera dina materiella och praktiska problem.",
+        "reversed": "En tid av lättnad efter tidigare bekymmer. Det kan också innebära en vändpunkt där tidigare utmaningar börjar lätta och din situation stabiliseras."
+    },
+    {
+        "cardName": "6 of Pentacles",
+        "upright": "Generositet, välgörenhet, samt att ge och ta emot hjälp. Dela med dig av dina resurser till dem som är mindre lyckligt lottade. En tid av positiv energi och framgång. Hur vi upprätthåller eller återställer ekonomisk balans och rättvisa i våra liv. Dela med dig mer generöst av dina resurser. Du kanske kommer att få hjälp från oväntat håll.",
+        "reversed": "Själviskhet, girighet och en brist på generositet. Ojämlikhet i relationer eller i ekonomiska situationer. Förlust, ekonomisk osäkerhet och konflikter på arbetet."
+    },
+    {
+        "cardName": "7 of Pentacles",
+        "upright": "Framsteg och framgångar väntar. Dessa kommer tack vare tidigare ansträngningar och hårt arbete. Fortsätt arbeta tålmodigt och uthålligt, även om resultatet ibland låter vänta på sig. Fortsatt ansträngning och bibehållen motivation för att uppnå långsiktiga mål.",
+        "reversed": "Frustration och framsteg som låter vänta på sig. Hinder på vägen mot målen. En känsla av att du inte når de önskade resultaten trots dina ansträngningar. Omvärdera dina strategier och planer."
+    },
+    {
+        "cardName": "8 of Pentacles",
+        "upright": "Dina ansträngningar och det hårda arbete du lagt ner är på väg att betala sig. Uthållighet och hängivenhet leder ofta till framgång och uppfyllelse här i livet. Du är nära att uppnå dina mål. En tid där de sista pusselbitarna faller på plats. En känsla av personlig tillfredsställelse och stolthet över det du har uppnått genom hårt arbete och hängivenhet. ",
+        "reversed": "En känsla av att du har gått vilse på din väg i livet. En tid av osäkerhet eller brist på klarhet om framtida riktning. Utmattning, både fysiskt och psykiskt. Du kan vara utmattad av att ha tagit på dig för mycket eller inte balanserat ditt arbete. En brist på motivation eller inspiration."
+    },
+    {
+        "cardName": "9 of Pentacles",
+        "upright": "En tid av framgång och överflöd. Det är läge att njuta av frukterna av ditt hårda arbete. En stark känsla av självförtroende, ekonomisk stabilitet och uppnåendet av väldefinierade mål. Du har lagt en solid grund för din framtid och nu kan känna dig trygg i din sits.",
+        "reversed": "Potentiella materiella förluster eller en falsk känsla av trygghet. Reflektera över vad som verkligen är viktigt för dig. Låt inte materialism eller ytlighet ta överhanden."
+    },
+    {
+        "cardName": "10 of Pentacles",
+        "upright": "En tid av exceptionell stabilitet, välstånd och lycka. En lång period av ansträngning och tålmodighet har lett till varaktig framgång och trygghet. En tid där du kan fira dina framgångar och dela med dig av din rikedom och lycka till dem runt omkring dig.",
+        "reversed": "Ta inte din nuvarande situation för given. Såväl materiella som emotionella förluster kan komma framöver om du inte iakttar försiktighet. Detta kan vara en tid då du bör omvärdera vad som verkligen ger dig trygghet och stabilitet i livet."
+    },
+    {
+        "cardName": "Page of Pentacles",
+        "upright": "En fas där du är redo att omfamna nya möjligheter och utmaningar med öppna armar. En tid då du utforskar nya intressen, passioner och färdigheter. Du uppmuntras till ett nyfiket sinne. Var mottaglig för nya erfarenheter som kan leda till personlig utveckling.",
+        "reversed": "En tid då du kan känna dig fast. Du kan uppleva en brist på klarhet eller riktning i livet. Detta kan vara ett tecken på att du behöver ta en paus för att reflektera över dina val och planer. Det är läge att identifiera vad som verkligen är viktigt för dig. Sedan bör du söka efter nya vägar mot utveckling."
+    },
+    {
+        "cardName": "Knight of Pentacles",
+        "upright": "Knight of Pentacles kan representera en person som du kan räkna med. Personen ifråga står fast vid sina åtaganden. Hårt arbete och uthållighet, samt ett metodiskt förhållningssätt till uppgifter och mål. En känsla av ansvar, såväl personligt som yrkesmässigt.",
+        "reversed": "Varning för stagnation. En brist på framsteg eller tendens att undvika ansvar. Undersök varför du känner ett motstånd till förändring eller undviker att ta viktiga steg framåt."
+    },
+    {
+        "cardName": "Queen of Pentacles",
+        "upright": "Queen of Pentacles symboliserar en person som är jordnära, praktisk och omsorgsfull. Denna drottning är en mästare på att hantera materiella tillgångar. Hon använder sin praktiska intelligens och visdom för att skapa välstånd och stabilitet.",
+        "reversed": "En obalans i hur du förhåller oss till ditt materiella och emotionella välbefinnande. En tid där materialismen tar överhand. Du bör agera mer omsorgsfullt och praktiskt."
+    },
+    {
+        "cardName": "King of Pentacles",
+        "upright": "King of Pentacles symboliserar framgång, välstånd och uppnåendet av långsiktiga mål. Han representerar en person som har förmågan att förverkliga sina drömmar genom praktiskt arbete och beslutsamhet. Men personen är även en stabil och pålitlig ledare. Andra kan vända sig till personen för vägledning och stöd. Vikten av ansvar, hårt arbete och en pragmatisk inställning till livet.",
+        "reversed": "Potentiella fallgropar. Några exempel på sådana är materialism, ekonomiska svårigheter eller en tid av stagnation. Det kan vara läge att reflektera och omvärdera dina värderingar och metoder för att försöka uppnå framgång och stabilitet."
+    }
+]

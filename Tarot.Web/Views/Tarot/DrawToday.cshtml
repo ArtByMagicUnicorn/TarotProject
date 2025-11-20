@@ -1,0 +1,52 @@
+﻿@* Vi talar om för vyn att modellen är ett ENDA kort *@
+@model Tarot.Data.TarotCard
+
+@{
+    ViewData["Title"] = "Dagens Kort";
+}
+
+<h1 class="text-center">@ViewData["Title"]</h1>
+
+
+<div class="card mb-3 mx-auto" style="max-width: 700px;">
+    <div class="row g-0">
+
+        <div class="col-md-5">
+            <img src="~/images/@(Model.Name).jpg" class="card-img-top" alt="@Model.Name" style="width: 100%; height: auto;">
+        </div>
+
+        <div class="col-md-7">
+            <div class="card-body">
+                <h2 class="card-title">@Model.Name</h2>
+                <h4 class="card-subtitle mb-2 text-muted">
+                    @Model.Suit (Nummer: @Model.Number)
+                </h4>
+
+                <hr>
+
+                <div class="tarot-card-meanings">
+                    @foreach (var meaning in Model.Meanings)
+                    {
+                        <p class="card-text">
+                            <strong>@meaning.MeaningCategory.CategoryName:</strong>
+                            @meaning.Text
+                        </p>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<hr />
+
+<div class="mx-auto" style="max-width: 500px;">
+    <div class="d-flex" style="gap: 10px;">
+
+        <a href="/tarot/drawtoday" class="btn-grad flex-fill">Dra ett nytt kort!</a>
+
+        <a href="/tarot" class="btn-grad flex-fill">Se hela kortleken</a>
+
+    </div>
+</div>

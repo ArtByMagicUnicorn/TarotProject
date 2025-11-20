@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Tarot.Data/Tarot.Data.csproj" />
+  <Project Path="Tarot.Web/Tarot.Web.csproj" />
+</Solution>
