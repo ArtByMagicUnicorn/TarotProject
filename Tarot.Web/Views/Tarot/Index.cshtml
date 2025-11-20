@@ -14,19 +14,21 @@
     @foreach (var card in Model)
     {
         <div class="col">
-            <div class="card h-100 shadow-sm bg-dark text-white border-secondary">
+            <a asp-action="Details" asp-route-id="@card.Id" class="text-decoration-none text-reset">
 
-                <img src="~/images/@(card.Name).jpg"
-                     class="card-img-top"
-                     alt="@card.Name"
-                     style="object-fit: cover; aspect-ratio: 2/3;">
+                <div class="card h-100 shadow-sm bg-dark text-white border-secondary">
+                    <img src="~/images/@(card.Name).jpg"
+                         class="card-img-top"
+                         alt="@card.Name"
+                         style="object-fit: cover; aspect-ratio: 2/3;">
 
-                <div class="card-body p-2 text-center">
-                    <h6 class="card-title mb-0">@card.Name</h6>
-                    <small class="text-muted">@card.Suit</small>
+                    <div class="card-body p-2 text-center">
+                        <h6 class="card-title mb-0">@card.Name</h6>
+                        <small class="text-muted">@card.Suit</small>
+                    </div>
                 </div>
 
-            </div>
+            </a>
         </div>
     }
 

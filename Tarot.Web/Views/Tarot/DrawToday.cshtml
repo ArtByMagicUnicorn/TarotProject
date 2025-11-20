@@ -1,36 +1,56 @@
-﻿@* Vi talar om för vyn att modellen är ett ENDA kort *@
-@model Tarot.Data.TarotCard
+﻿@* VIKTIGT: Nu använder vi DrawnCard-modellen här också *@
+@model Tarot.Web.Models.DrawnCard
 
 @{
     ViewData["Title"] = "Dagens Kort";
 }
 
 <h1 class="text-center">@ViewData["Title"]</h1>
-
+<p class="text-center">Här är ditt slumpmässigt dragna kort:</p>
 
 <div class="card mb-3 mx-auto" style="max-width: 700px;">
     <div class="row g-0">
 
         <div class="col-md-5">
-            <img src="~/images/@(Model.Name).jpg" class="card-img-top" alt="@Model.Name" style="width: 100%; height: auto;">
+            <div style="overflow: hidden; border-radius: var(--bs-card-inner-border-radius);">
+                <img src="~/images/@(Model.Card.Name).jpg"
+                     class="card-img-top rounded-start"
+                     alt="@Model.Card.Name"
+                     style="width: 100%; height: auto; transition: transform 0.5s; @(Model.IsReversed ? "transform: rotate(180deg);" : "")">
+            </div>
         </div>
 
         <div class="col-md-7">
             <div class="card-body">
-                <h2 class="card-title">@Model.Name</h2>
+                <h2 class="card-title">
+                    @Model.Card.Name
+                    @if (Model.IsReversed)
+                    {
+                        <span class="badge bg-warning text-dark fs-6 ms-2">Omvänd</span>
+                    }
+                </h2>
+
                 <h4 class="card-subtitle mb-2 text-muted">
-                    @Model.Suit (Nummer: @Model.Number)
+                    @Model.Card.Suit (Nummer: @Model.Card.Number)
                 </h4>
 
                 <hr>
 
                 <div class="tarot-card-meanings">
-                    @foreach (var meaning in Model.Meanings)
+                    @foreach (var meaning in Model.Card.Meanings)
                     {
-                        <p class="card-text">
-                            <strong>@meaning.MeaningCategory.CategoryName:</strong>
-                            @meaning.Text
-                        </p>
+                        // Samma logik som i "Tre kort"
+                        bool showThis = false;
+                        if (Model.IsReversed && meaning.MeaningCategory.CategoryName == "Omvänd") { showThis = true; }
+                        if (!Model.IsReversed && meaning.MeaningCategory.CategoryName == "Upprätt") { showThis = true; }
+
+                        if (showThis)
+                        {
+                            <p class="card-text">
+                                <strong>@meaning.MeaningCategory.CategoryName:</strong>
+                                @meaning.Text
+                            </p>
+                        }
                     }
                 </div>
             </div>
@@ -38,15 +58,11 @@
     </div>
 </div>
 
-
 <hr />
 
 <div class="mx-auto" style="max-width: 500px;">
     <div class="d-flex" style="gap: 10px;">
-
         <a href="/tarot/drawtoday" class="btn-grad flex-fill">Dra ett nytt kort!</a>
-
-        <a href="/tarot" class="btn-grad flex-fill">Se hela kortleken</a>
-
+        <a href="/tarot" class="btn btn-secondary flex-fill">Se hela kortleken</a>
     </div>
 </div>

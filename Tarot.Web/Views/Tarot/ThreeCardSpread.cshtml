@@ -1,74 +1,87 @@
-﻿@model IEnumerable<Tarot.Data.TarotCard>
+﻿@* OBS: Nu tar vi emot en lista av 'DrawnCard' *@
+@model IEnumerable<Tarot.Web.Models.DrawnCard>
 
 @{
     ViewData["Title"] = "Tre kort: Dåtid, Nutid, Framtid";
 }
 
 <h1 class="text-center">@ViewData["Title"]</h1>
-<h6 class="text-center">Ställ din fråga (ska inte kunna besvaras genom "ja" eller "nej"). Läs tolkningarna under korten.</h6>
+<p class="text-center">Här är din läggning med tre kort.</p>
 
 <hr />
 
 <div class="row">
 
-    <div class="col-md-4">
-        <div class="card h-100">
-            <div class="card-header text-center"><strong>Dåtid</strong></div>
+    @for (int i = 0; i < Model.Count(); i++)
+    {
+        var item = Model.ElementAt(i); // Detta är vårt 'DrawnCard' wrapper
+        var card = item.Card;          // Detta är själva kortet
 
-            @{
-                var card1 = Model.ElementAt(0);
-            }
+        // Vi sätter rubriken beroende på vilket nummer i loopen vi är på
+        string title = i == 0 ? "Dåtid" : (i == 1 ? "Nutid" : "Framtid");
 
-            <img src="~/images/@(card1.Name).jpg" class="card-img-top" alt="@card1.Name" style="width: 100%; height: auto;"> <div class="card-body">
-                <h5 class="card-title text-center">@card1.Name</h5> @foreach (var meaning in card1.Meanings) {
-                <p class="card-text small">
-                    <strong>@meaning.MeaningCategory.CategoryName:</strong>
-                    @meaning.Text
-                </p>
-                                }
+        <div class="col-md-4">
+            <div class="card h-100">
+                <div class="card-header text-center">
+                    <strong>@title</strong>
+                    @if (item.IsReversed)
+                    {
+                        <span class="badge bg-warning text-dark ms-2">Omvänd</span>
+                    }
+                </div>
+
+                <div style="overflow: hidden;">
+                    <img src="~/images/@(card.Name).jpg"
+                         class="card-img-top"
+                         alt="@card.Name"
+                         style="width: 100%; height: auto; transition: transform 0.5s; @(item.IsReversed ? "transform: rotate(180deg);" : "")">
+                </div>
+
+                <div class="card-body">
+                    <h5 class="card-title text-center">@card.Name</h5>
+
+                    @foreach (var meaning in card.Meanings)
+                    {
+                        // Om kortet är omvänt OCH kategorin är "Omvänd"... VISA!
+                        // ELLER om kortet är rättvänt OCH kategorin är "Upprätt"... VISA!
+
+                        bool showThis = false;
+                        if (item.IsReversed && meaning.MeaningCategory.CategoryName == "Omvänd") { showThis = true; }
+                        if (!item.IsReversed && meaning.MeaningCategory.CategoryName == "Upprätt") { showThis = true; }
+
+                        if (showThis)
+                        {
+                            <p class="card-text small mt-3">
+                                <strong>@meaning.MeaningCategory.CategoryName:</strong><br />
+                                @meaning.Text
+                            </p>
+                        }
+                    }
+                </div>
             </div>
         </div>
-    </div>
-
-    <div class="col-md-4">
-        <div class="card h-100">
-            <div class="card-header text-center"><strong>Nutid</strong></div>
-
-            @{
-                var card2 = Model.ElementAt(1);
-            }
-
-            <img src="~/images/@(card2.Name).jpg" class="card-img-top" alt="@card2.Name" style="width: 100%; height: auto;"><div class="card-body">
-                <h5 class="card-title text-center">@card2.Name</h5> @foreach (var meaning in card2.Meanings) {
-                <p class="card-text small">
-                    <strong>@meaning.MeaningCategory.CategoryName:</strong>
-                    @meaning.Text
-                </p>
-                                }
-            </div>
-        </div>
-    </div>
-
-    <div class="col-md-4">
-        <div class="card h-100">
-            <div class="card-header text-center"><strong>Framtid</strong></div>
-
-            @{
-                var card3 = Model.ElementAt(2);
-            }
-
-            <img src="~/images/@(card3.Name).jpg" class="card-img-top" alt="@card3.Name" style="width: 100%; height: auto;"> <div class="card-body">
-                <h5 class="card-title text-center">@card3.Name</h5> @foreach (var meaning in card3.Meanings) {
-                <p class="card-text small">
-                    <strong>@meaning.MeaningCategory.CategoryName:</strong>
-                    @meaning.Text
-                </p>
-                                }
-            </div>
-        </div>
-    </div>
+    }
 
 </div>
+
+<hr />
+
+<div class="row justify-content-center mt-4">
+    <div class="col-md-9">
+        <h2 class="text-center">Din Egen Tolkning</h2>
+        <p class="text-center text-muted">Skriv ner dina tankar och känslor om läggningen.</p>
+        <form>
+            <div class="mb-3">
+                <label for="userNotes" class="form-label">Mina anteckningar:</label>
+                <textarea class="form-control" id="userNotes" rows="8" placeholder="Skriv här..."></textarea>
+            </div>
+            <div class="text-end">
+                <button type="submit" class="btn btn-primary disabled" title="Kommer snart!">Spara i Dagboken</button>
+            </div>
+        </form>
+    </div>
+</div>
+
 <hr />
 
 <div class="text-center">

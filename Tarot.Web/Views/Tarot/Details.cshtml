@@ -1,0 +1,41 @@
+﻿@model Tarot.Data.TarotCard
+
+@{
+    ViewData["Title"] = Model.Name;
+}
+
+<div class="container mt-4">
+    <a href="/tarot" class="btn btn-outline-light mb-4">&larr; Tillbaka till galleriet</a>
+
+    <div class="card bg-dark text-white border-secondary mb-3">
+        <div class="row g-0">
+
+            <div class="col-md-4">
+                <img src="~/images/@(Model.Name).jpg"
+                     class="img-fluid rounded-start"
+                     alt="@Model.Name"
+                     style="width: 100%; height: auto;">
+            </div>
+
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h1 class="card-title display-5">@Model.Name</h1>
+                    <h3 class="text-muted">@Model.Suit (Nummer: @Model.Number)</h3>
+
+                    <hr class="border-secondary">
+
+                    <div class="mt-4">
+                        @foreach (var meaning in Model.Meanings)
+                        {
+                            <div class="mb-4">
+                                <h4 class="text-info">@meaning.MeaningCategory.CategoryName</h4>
+                                <p class="fs-5">@meaning.Text</p>
+                            </div>
+                        }
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
