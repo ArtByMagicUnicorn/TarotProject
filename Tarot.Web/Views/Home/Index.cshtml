@@ -1,8 +1,77 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Välkommen";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Välkommen!</h1>
-    <p>Stig in i en magisk värld där ingenting är omöjligt!</p>
+<div class="text-center mt-5">
+    <h1 class="display-4 mb-3">Tarot Oraklet</h1>
+    <p class="lead mb-5">Blanda kortleken för att sätta din intention.</p>
+
+    <div class="deck-container" id="tarotDeck">
+        <div class="deck-card" style="transform: translate(-4px, -4px);"></div>
+        <div class="deck-card" style="transform: translate(-3px, -3px);"></div>
+        <div class="deck-card" style="transform: translate(-2px, -2px);"></div>
+        <div class="deck-card" style="transform: translate(-1px, -1px);"></div>
+
+        <div class="deck-card" id="topCard">
+            <img src="~/images/card-back.jpg" alt="Kortlek">
+        </div>
+
+        <div class="deck-card" id="secondCard" style="z-index: -1;">
+            <img src="~/images/card-back.jpg" alt="Kortlek">
+        </div>
+    </div>
+
+    <br /><br />
+
+    <button id="shuffleBtn" class="btn-grad mx-auto" onclick="startShuffle()">
+        Blanda Kortleken
+    </button>
+
+    <div id="spreadMenu" class="mt-5" style="display: none; opacity: 0; transition: opacity 1s;">
+        <h3 class="mb-4 text-warning">Kortleken är redo. Välj din väg:</h3>
+
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+            <a href="/Tarot/DrawToday" class="btn btn-outline-light btn-lg">Dagens Kort</a>
+            <a href="/Tarot/ThreeCardSpread" class="btn btn-outline-light btn-lg">Tre Kort (Dåtid/Nutid/Framtid)</a>
+            <a href="/Tarot/CelticCross" class="btn btn-outline-light btn-lg">Keltiskt Kors</a>
+        </div>
+    </div>
+
 </div>
+
+<script>
+    function startShuffle() {
+        var deck = document.getElementById("tarotDeck");
+        var btn = document.getElementById("shuffleBtn");
+        var menu = document.getElementById("spreadMenu");
+        var topCard = document.getElementById("topCard");
+        var secondCard = document.getElementById("secondCard");
+
+        // 1. Byt text på knappen och inaktivera den
+        btn.innerText = "Blandar...";
+        btn.classList.add("disabled");
+
+        // 2. Starta animationen (lägg till CSS-klasserna)
+        topCard.classList.add("shuffling-right");
+        secondCard.classList.add("shuffling-left");
+
+        // 3. Vänta 2 sekunder (medan det blandas)
+        setTimeout(function() {
+
+            // Stoppa animationen
+            topCard.classList.remove("shuffling-right");
+            secondCard.classList.remove("shuffling-left");
+
+            // Göm knappen
+            btn.style.display = "none";
+
+            // Visa menyn med en snygg "fade in"
+            menu.style.display = "block";
+            // Litet hack för att CSS-transition ska funka
+            setTimeout(function() {
+                menu.style.opacity = "1";
+            }, 10);
+
+        }, 2500); // Blandar i 2.5 sekunder
+    }
+</script>

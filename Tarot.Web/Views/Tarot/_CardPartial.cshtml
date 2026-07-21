@@ -1,0 +1,58 @@
+﻿@* Denna fil tar emot ett "anonymt objekt" med två saker: 
+   Item (DrawnCard) och Title (sträng)
+*@
+@{
+    var item = (Tarot.Web.Models.DrawnCard)Model.Item;
+    var title = (string)Model.Title;
+    var card = item.Card;
+}
+
+<div class="col">
+    <div class="card h-100 bg-dark text-white border-secondary">
+        <div class="card-header text-center text-warning border-secondary">
+            <strong>@title</strong>
+            @if (item.IsReversed)
+            {
+                <span class="badge bg-secondary text-white ms-2" style="font-size: 0.7em;">Omvänd</span>
+            }
+        </div>
+
+        <div class="flip-card" style="height: 250px;" onclick="this.querySelector('.flip-card-inner').classList.toggle('is-flipped')">
+            <div class="flip-card-inner">
+
+                <div class="flip-card-front">
+                    <img src="~/images/card-back.jpg"
+                         alt="Baksida"
+                         style="width:100%; height:100%; object-fit: contain; border-radius: 5px;">
+                </div>
+
+                <div class="flip-card-back">
+                    <img src="~/images/@(card.Name).jpg"
+                         alt="@card.Name"
+                         style="width: 100%; height: 100%; object-fit: contain; border-radius: 5px; @(item.IsReversed ? "transform: rotate(180deg);" : "")">
+                </div>
+
+            </div>
+        </div>
+
+        <p class="text-center text-muted small mt-1 mb-0" style="font-size: 0.7em;">(Klicka för att vända)</p>
+
+        <div class="card-body">
+            <h5 class="card-title text-center">@card.Name</h5>
+
+            @foreach (var meaning in card.Meanings)
+            {
+                bool showThis = false;
+                if (item.IsReversed && meaning.MeaningCategory.CategoryName == "Omvänd") { showThis = true; }
+                if (!item.IsReversed && meaning.MeaningCategory.CategoryName == "Upprätt") { showThis = true; }
+
+                if (showThis)
+                {
+                    <p class="card-text small mt-2 text-light">
+                        @meaning.Text
+                    </p>
+                }
+            }
+        </div>
+    </div>
+</div>

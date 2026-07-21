@@ -1,0 +1,72 @@
+﻿@model IEnumerable<Tarot.Web.Models.DrawnCard>
+
+@{
+    ViewData["Title"] = "Keltiskt Kors";
+
+    // En lista med vad positionerna betyder i det Keltiska Korset
+    string[] positions = {
+        "1. Hjärtat (Grundsituationen)",
+        "2. Hindret (Det som korsar)",
+        "3. Det omedvetna (Grunden)",
+        "4. Det förflutna",
+        "5. Det medvetna (Målet)",
+        "6. Framtiden (Det närmaste)",
+        "7. Frågeställaren (Självbild)",
+        "8. Omgivningen (Yttre påverkan)",
+        "9. Förhoppningar & Rädslor",
+        "10. Utfallet (Resultatet)"
+    };
+}
+
+<h1 class="text-center mb-4">@ViewData["Title"]</h1>
+<p class="text-center text-muted mb-5">En djupgående läggning med 10 kort som belyser alla aspekter av din fråga.</p>
+
+<div class="row">
+
+    <div class="col-lg-8 celtic-divider">
+
+        <h3 class="border-bottom pb-2 mb-4 text-warning">Del 1: Korset (Nuet)</h3>
+        <p class="text-muted mb-4">Läs dessa kort först. De beskriver situationen här och nu.</p>
+
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            @for (int i = 0; i < 6; i++)
+            {
+                @await Html.PartialAsync("_CardPartial", new { Item = Model.ElementAt(i), Title = positions[i] })
+            }
+        </div>
+    </div>
+
+    <div class="col-lg-4 celtic-staff-area">
+
+        <h3 class="border-bottom pb-2 mb-4 text-info">Del 2: Staven (Framtiden)</h3>
+        <p class="text-muted mb-4">När du förstått korset, titta hit för att se utvecklingen.</p>
+
+        <div class="row row-cols-1 g-4">
+            @for (int i = 6; i < 10; i++)
+            {
+                @await Html.PartialAsync("_CardPartial", new { Item = Model.ElementAt(i), Title = positions[i] })
+            }
+        </div>
+    </div>
+
+</div>
+
+<hr class="mt-5" />
+
+<div class="row justify-content-center mt-4">
+    <div class="col-md-9">
+        <h2 class="text-center">Din Tolkning</h2>
+        <form>
+            <div class="mb-3">
+                <textarea class="form-control" rows="8" placeholder="Vad säger det stora korset dig?"></textarea>
+            </div>
+            <div class="text-end">
+                <button type="submit" class="btn btn-primary disabled" title="Kommer snart!">Spara</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="text-center mt-4 mb-5">
+    <a href="/tarot/celticcross" class="btn-grad" style="display: inline-block; width: auto;">Dra en ny läggning</a>
+</div>

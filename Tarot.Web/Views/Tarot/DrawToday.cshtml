@@ -12,12 +12,24 @@
     <div class="row g-0">
 
         <div class="col-md-5">
-            <div style="overflow: hidden; border-radius: var(--bs-card-inner-border-radius);">
-                <img src="~/images/@(Model.Card.Name).jpg"
-                     class="card-img-top rounded-start"
-                     alt="@Model.Card.Name"
-                     style="width: 100%; height: auto; transition: transform 0.5s; @(Model.IsReversed ? "transform: rotate(180deg);" : "")">
+            <div class="flip-card" onclick="this.querySelector('.flip-card-inner').classList.toggle('is-flipped')">
+
+                <div class="flip-card-inner">
+
+                    <div class="flip-card-front">
+                        <img src="~/images/card-back.jpg" alt="Baksida" style="width:100%; height:100%; object-fit: contain; border-radius: 10px;">
+                    </div>
+
+                    <div class="flip-card-back">
+                        <img src="~/images/@(Model.Card.Name).jpg"
+                             alt="@Model.Card.Name"
+                             style="width: 100%; height: 100%; object-fit: contain; border-radius: 10px; @(Model.IsReversed ? "transform: rotate(180deg);" : "")">
+                    </div>
+
+                </div>
             </div>
+
+            <p class="text-center text-muted mt-2 small">Klicka på kortet för att vända!</p>
         </div>
 
         <div class="col-md-7">
@@ -63,6 +75,6 @@
 <div class="mx-auto" style="max-width: 500px;">
     <div class="d-flex" style="gap: 10px;">
         <a href="/tarot/drawtoday" class="btn-grad flex-fill">Dra ett nytt kort!</a>
-        <a href="/tarot" class="btn btn-secondary flex-fill">Se hela kortleken</a>
+        <a href="/tarot" class="btn-grad flex-fill">Se hela kortleken</a>
     </div>
 </div>

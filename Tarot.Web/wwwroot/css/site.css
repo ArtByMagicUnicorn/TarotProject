@@ -77,6 +77,7 @@ h6 {
     margin: 10px;
     padding: 15px 45px;
     text-align: center;
+    text-decoration: none;
     transition: 0.5s;
     background-size: 200% auto;
     color: white;
@@ -89,6 +90,7 @@ h6 {
         background-position: right center; /* Ändrar gradientens position */
         color: #fff;
         text-decoration: none;
+        font-weight: bold;
     }
 
 /*
@@ -134,6 +136,27 @@ h6 {
     border-bottom-left-radius: var(--bs-card-inner-border-radius);
 }
 
+/* =================================
+   Layout för Keltiska Korset 
+   =================================
+*/
+
+/* Denna kod gäller ENDAST på stora skärmar (Desktop/Laptop) */
+@media (min-width: 992px) {
+    .celtic-divider {
+        /* En tjock, tydlig gräns till höger */
+        border-right: 3px solid #444;
+        /* Rejält med luft så man inte råkar titta fel */
+        padding-right: 50px;
+       
+    }
+
+    /* Lite extra luft för Staven på högersidan */
+    .celtic-staff-area {
+        padding-left: 30px;
+    }
+}
+
 /* När skärmen är liten (mobil) och kolumnerna staplas... */
 @media (max-width: 767.98px) {
     .img-placeholder {
@@ -142,4 +165,130 @@ h6 {
         border-top-right-radius: var(--bs-card-inner-border-radius);
     }
 }
-   
+
+/* =================================
+   Kort-Animationer (Flip)
+   ================================= */
+
+/* Behållaren som håller kortet */
+.flip-card {
+    background-color: transparent;
+    /* Vi sätter en aspekt-ratio så kortet håller formen (bredd/höjd) */
+    aspect-ratio: 2/3;
+    perspective: 1000px; /* Ger 3D-djup */
+    cursor: pointer; /* Visar handen-pekaren */
+}
+
+/* Den inre delen som faktiskt snurrar */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s; /* Hur lång tid animationen tar */
+    transform-style: preserve-3d;
+}
+
+    /* Klassen vi lägger på med JavaScript för att vända kortet */
+    .flip-card-inner.is-flipped {
+        transform: rotateY(180deg);
+    }
+
+/* Gemensamt för framsida och baksida */
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Döljer baksidan när den är vänd bort */
+    backface-visibility: hidden;
+    border-radius: 10px; /* Snygga hörn */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* BAKSIDAN (Det man ser först) */
+.flip-card-front {
+    background: linear-gradient(135deg, #1a0b2e 0%, #360940 100%);
+    color: black;
+}
+
+/* FRAMSIDAN (Det riktiga kortet, som är "baksidan" i början) */
+.flip-card-back {
+    background-color: #fdfbf7;
+    transform: rotateY(180deg);
+}
+
+/* =================================
+   Blandnings-maskinen (Startsidan)
+   ================================= */
+
+.deck-container {
+    position: relative;
+    width: 200px; /* Bredden på kortleken */
+    height: 300px; /* Höjden på kortleken */
+    margin: 0 auto; /* Centrera */
+    perspective: 1000px;
+}
+
+/* Alla kort i traven */
+.deck-card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease-in-out;
+    /* Använd din nya snygga baksida! */
+    background: linear-gradient(135deg, #1a0b2e 0%, #360940 100%);
+    border: 2px solid #442c5c; /* En liten kant */
+}
+
+    /* Bilden på baksidan */
+    .deck-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        border-radius: 8px;
+        opacity: 0.8; /* Gör mönstret lite subtilt så det smälter in */
+    }
+
+/* Animation: Skaka/Blanda vänster */
+@keyframes shuffleLeft {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+
+    50% {
+        transform: translate(-60px, 0) rotate(-5deg);
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+}
+
+/* Animation: Skaka/Blanda höger */
+@keyframes shuffleRight {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+
+    50% {
+        transform: translate(60px, 0) rotate(5deg);
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+}
+
+/* Klasser som vi sätter på med JavaScript för att starta animationen */
+.shuffling-left {
+    animation: shuffleLeft 0.4s ease-in-out infinite;
+}
+
+.shuffling-right {
+    animation: shuffleRight 0.4s ease-in-out infinite;
+    animation-delay: 0.2s; /* Starta lite senare för "kaos"-effekt */
+}
